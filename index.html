@@ -13,7 +13,11 @@
     <button id="button" onclick="spawn()"
       style="background-color: blue; color: white; padding: 5px 10px; border: solid; border-radius: 5px; cursor: pointer;"><img src="folder/a.png" alt="pic" width=50></button>
   </div>
-  <script>function display2(){
+  <script>
+   function spawn(){
+     window.location.href = "/add.html"
+   }
+   function display2(){
 let trackers =  JSON.parse(localStorage.getItem("trackers")) || []
 trackers.forEach(tracker => {
   let title = document.createElement("p")

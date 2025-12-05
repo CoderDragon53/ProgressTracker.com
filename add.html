@@ -14,12 +14,5 @@
       <input id="des" type="text" placeholder="Enter description here...">
       <button onclick="display()">go back for testing purposes</button>
     </div>
-    <script>function display(){
-  let inputValue = document.getElementById("title").value;
-  let inputValue2 = document.getElementById("des").value;
-  let trackers = JSON.parse(localStorage.getItem("trackers")) || [];
-  trackers.push({ title: inputValue, description: inputValue2})
-  localStorage.setItem("trackers", JSON.stringify(trackers))
-  window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/"
-}</script>
+    <script src="scripting.js"></script>
   </body>

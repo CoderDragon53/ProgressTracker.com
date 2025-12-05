@@ -1,3 +1,8 @@
+
+function spawn(){
+  window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/add.html"
+}
+
 function display2(){
 let trackers =  JSON.parse(localStorage.getItem("trackers")) || []
 trackers.forEach(tracker => {

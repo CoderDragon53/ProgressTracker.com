@@ -4,5 +4,5 @@ function display(){
   let trackers = JSON.parse(localStorage.getItem("trackers")) || [];
   trackers.push({ title: inputValue, description: inputValue2})
   localStorage.setItem("trackers", JSON.stringify(trackers))
-  window.location.href = "/index.html"
+  window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/"
 }

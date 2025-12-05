@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#button{
+  border-color: black;
+  border-style: solid;
+}
+
+#div{
+  background-color: blue;
+  width: 1300px;
+  height: 100px;
+}

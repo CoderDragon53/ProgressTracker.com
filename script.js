@@ -10,6 +10,8 @@ trackers.forEach(tracker => {
   let description = document.createElement("p")
   title.innerHTML = tracker.title
   description.innerHTML = tracker.description
+  title.id = "title2"
+  description.id = "desc"
   document.body.appendChild(title)
   document.body.appendChild(description)
 })

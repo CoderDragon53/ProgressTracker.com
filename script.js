@@ -29,6 +29,4 @@ trackers.forEach(tracker => {
 
 window.onload = display2;
 
-function r() {
-  https://coderdragon53.github.io/ProgressTracker.com/add.html
-  }
+

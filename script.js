@@ -17,7 +17,7 @@ trackers.forEach(tracker => {
   div.style.borderColor = "black"
   div.style.borderRadius = "5px"
   div.style.borderWidth = "5px"
-  div.style.padding = "10px"
+  div.style.padding = "10px auto"
   div.style.width  = "100px"
   div.style.textAlign = "center"
   title.innerHTML = tracker.title
@@ -27,6 +27,7 @@ trackers.forEach(tracker => {
   document.body.appendChild(div)
   div.appendChild(title)
   div.appendChild(description)
+  div.appendChild(status)
   console.log("Tracker:", tracker.title, tracker.description);
   console.log("Div created:", div);
 })

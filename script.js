@@ -8,12 +8,17 @@ let trackers =  JSON.parse(localStorage.getItem("trackers")) || []
 trackers.forEach(tracker => {
   let title = document.createElement("p")
   let description = document.createElement("p")
+  let div = document.createElement("div")
+  div.style.borderStyle = "solid"
+  div.style.borderColor = "black"
+  div.style.borderRadius = "5px"
   title.innerHTML = tracker.title
   description.innerHTML = tracker.description
   title.id = "title2"
   description.id = "desc"
-  document.body.appendChild(title)
-  document.body.appendChild(description)
+  document.body.appendChild(div)
+  div.appendChild(title)
+  div.appendChild(description)
 })
 }
 

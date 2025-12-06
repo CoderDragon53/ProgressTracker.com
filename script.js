@@ -12,6 +12,7 @@ trackers.forEach(tracker => {
   div.style.borderStyle = "solid"
   div.style.borderColor = "black"
   div.style.borderRadius = "5px"
+  div.style.borderWidth = "5px"
   title.innerHTML = tracker.title
   description.innerHTML = tracker.description
   title.id = "title2"

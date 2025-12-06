@@ -22,6 +22,8 @@ trackers.forEach(tracker => {
   document.body.appendChild(div)
   div.appendChild(title)
   div.appendChild(description)
+  console.log("Tracker:", tracker.title, tracker.description);
+  console.log("Div created:", div);
 })
 }
 

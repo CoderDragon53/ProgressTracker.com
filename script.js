@@ -14,6 +14,7 @@ trackers.forEach(tracker => {
   div.style.borderRadius = "5px"
   div.style.borderWidth = "5px"
   div.style.padding = "10px"
+  div.style.margin  = "20px"
   div.style.textAlign = "center"
   title.innerHTML = tracker.title
   description.innerHTML = tracker.description

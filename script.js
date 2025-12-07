@@ -17,6 +17,14 @@ trackers.forEach(tracker => {
   div.style.borderColor = "black"
   div.style.borderRadius = "5px"
   div.style.borderWidth = "5px"
+  veryLow.style.backgroundColor = "darkgreen"
+  veryLow.style.borderRadius = "50px"
+  veryLow.onclick = () => {
+    trackers.priority = "Very Low"
+    status.innerHTML = "Priority: Very Low"
+    status.style.color = "darkgreen"
+    localStorage.setItem("trackers", JSON.stringify(trackers))
+  }
   div.style.padding = "10px"
   div.style.width  = "100px"
   div.style.margin = "10px auto"
@@ -29,7 +37,9 @@ trackers.forEach(tracker => {
   div.appendChild(title)
   div.appendChild(description)
   div.appendChild(status)
-  console.log("Tracker:", tracker.title, tracker.description);
+  div.appendChild(veryLow)
+  
+  console.log("Tracker:", tracker.title, tracker.description, tracker.priority);
   console.log("Div created:", div);
 })
 }

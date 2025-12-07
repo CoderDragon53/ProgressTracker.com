@@ -2,7 +2,7 @@ function display(){
   let inputValue = document.getElementById("title").value;
   let inputValue2 = document.getElementById("des").value;
   let trackers = JSON.parse(localStorage.getItem("trackers")) || [];
-  trackers.push({ title: inputValue, description: inputValue2})
+  trackers.push({ title: inputValue, description: inputValue2, priority:"Unspecified"})
   localStorage.setItem("trackers", JSON.stringify(trackers))
   window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/"
 }

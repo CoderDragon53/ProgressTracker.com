@@ -20,7 +20,7 @@ trackers.forEach(tracker => {
   veryLow.style.backgroundColor = "darkgreen"
   veryLow.style.borderRadius = "50px"
   veryLow.onclick = () => {
-    trackers.priority = "Very Low"
+    tracker.priority = "Very Low"
     status.innerHTML = "Priority: Very Low"
     status.style.color = "darkgreen"
     localStorage.setItem("trackers", JSON.stringify(trackers))

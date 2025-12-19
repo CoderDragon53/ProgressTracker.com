@@ -1,6 +1,6 @@
 
 function spawn(){
-  window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/add.html"
+  window.location.href = "https://CoderDragon53.github.io/ProgressTracker.com/add"
 }
 
 function display2(){
